@@ -1,0 +1,66 @@
+[0.064s] Invoking command in '/home/teamojasdv/ros2_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs CMAKE_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/teamojasdv/ros2_ws/build/realsense2_camera -- -j6 -l6
+[0.957s] [ 63%] Built target realsense2_camera
+[1.027s] [ 72%] Built target gtest
+[1.086s] [ 81%] Built target gtest_main
+[1.158s] [ 90%] Built target realsense2_camera_node
+[1.227s] [100%] Built target gtest_template
+[1.256s] Invoked command in '/home/teamojasdv/ros2_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs CMAKE_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/teamojasdv/ros2_ws/build/realsense2_camera -- -j6 -l6
+[1.372s] Invoking command in '/home/teamojasdv/ros2_ws/build/realsense2_camera': AMENT_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs CMAKE_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/teamojasdv/ros2_ws/build/realsense2_camera
+[1.392s] -- Install configuration: "Release"
+[1.395s] -- Execute custom install script
+[1.398s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[1.400s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[1.402s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/base_realsense_node.h
+[1.403s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/constants.h
+[1.404s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/dynamic_params.h
+[1.405s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/gl_window.h
+[1.406s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/image_publisher.h
+[1.407s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/named_filter.h
+[1.408s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/profile_manager.h
+[1.409s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/realsense_node_factory.h
+[1.409s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/ros_param_backend.h
+[1.410s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/ros_sensor.h
+[1.411s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/ros_utils.h
+[1.412s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/include/sensor_params.h
+[1.416s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[1.416s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[1.417s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[1.418s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[1.427s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[1.428s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[1.429s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[1.430s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[1.432s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[1.433s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[1.434s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[1.436s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[1.437s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[1.438s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[1.439s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[1.440s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[1.441s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[1.442s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[1.444s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[1.445s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[1.447s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[1.448s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[1.451s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[1.453s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[1.454s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[1.455s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[1.456s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[1.457s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[1.459s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[1.460s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[1.461s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[1.462s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[1.462s] -- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[1.485s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[1.486s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[1.488s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.489s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[1.490s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.490s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[1.491s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[1.493s] -- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[1.501s] Invoked command in '/home/teamojasdv/ros2_ws/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs CMAKE_PREFIX_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64 PYTHONPATH=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/teamojasdv/ros2_ws/build/realsense2_camera

@@ -3,7 +3,9 @@ setup.cfg
 setup.py
 my_detection_package/__init__.py
 my_detection_package/camera_node.py
+my_detection_package/display_node.py
 my_detection_package/slam_node.py
+my_detection_package/yolo_node.py
 my_detection_package.egg-info/PKG-INFO
 my_detection_package.egg-info/SOURCES.txt
 my_detection_package.egg-info/dependency_links.txt

@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_node = my_detection_package.camera_node:main',
-            'slam_node = my_detection_package.slam_node:main',
+            'yolo_node = my_detection_package.yolo_node:main',
+            'display_node = my_detection_package.display_node:main',
         ],
     },
 )
+

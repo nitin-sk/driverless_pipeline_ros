@@ -1,0 +1,21 @@
+[2.504s] Invoking command in '/home/teamojasdv/ros2_ws/build/my_detection_package': PYTHONPATH=/home/teamojasdv/ros2_ws/build/my_detection_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/teamojasdv/ros2_ws/build/my_detection_package/build --no-deps symlink_data
+[3.396s] running develop
+[3.397s] /usr/local/lib/python3.10/dist-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.397s]   warnings.warn(
+[3.998s] running egg_info
+[4.037s] writing my_detection_package.egg-info/PKG-INFO
+[4.038s] writing dependency_links to my_detection_package.egg-info/dependency_links.txt
+[4.038s] writing entry points to my_detection_package.egg-info/entry_points.txt
+[4.039s] writing requirements to my_detection_package.egg-info/requires.txt
+[4.039s] writing top-level names to my_detection_package.egg-info/top_level.txt
+[4.117s] reading manifest file 'my_detection_package.egg-info/SOURCES.txt'
+[4.118s] writing manifest file 'my_detection_package.egg-info/SOURCES.txt'
+[4.245s] running build_ext
+[4.245s] Creating /home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages/my-detection-package.egg-link (link to .)
+[4.247s] Installing camera_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.247s] Installing display_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.248s] Installing yolo_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.248s] 
+[4.248s] Installed /home/teamojasdv/ros2_ws/build/my_detection_package
+[4.249s] running symlink_data
+[4.404s] Invoked command in '/home/teamojasdv/ros2_ws/build/my_detection_package' returned '0': PYTHONPATH=/home/teamojasdv/ros2_ws/build/my_detection_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/teamojasdv/ros2_ws/build/my_detection_package/build --no-deps symlink_data
