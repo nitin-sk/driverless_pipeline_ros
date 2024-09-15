@@ -1,0 +1,1 @@
+my_detection_package

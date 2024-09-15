@@ -1,0 +1,761 @@
+[0.000000] (-) TimerEvent: {}
+[0.000723] (my_detection_package) JobQueued: {'identifier': 'my_detection_package', 'dependencies': OrderedDict()}
+[0.001282] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001565] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs')])}
+[0.001822] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs')])}
+[0.001925] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.012785] (my_detection_package) JobStarted: {'identifier': 'my_detection_package'}
+[0.025140] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.025533] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/teamojasdv/ros2_ws/src/realsense-ros/realsense2_camera_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099309] (-) TimerEvent: {}
+[0.142573] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 10.5.0\n'}
+[0.199479] (-) TimerEvent: {}
+[0.261291] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 10.5.0\n'}
+[0.284364] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299579] (-) TimerEvent: {}
+[0.400163] (-) TimerEvent: {}
+[0.454137] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.478918] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.479778] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.481180] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.491764] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500236] (-) TimerEvent: {}
+[0.600761] (-) TimerEvent: {}
+[0.658854] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.684777] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.685732] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.687307] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.693529] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700869] (-) TimerEvent: {}
+[0.801432] (-) TimerEvent: {}
+[0.902389] (-) TimerEvent: {}
+[1.003113] (-) TimerEvent: {}
+[1.103738] (-) TimerEvent: {}
+[1.204354] (-) TimerEvent: {}
+[1.304974] (-) TimerEvent: {}
+[1.405711] (-) TimerEvent: {}
+[1.506321] (-) TimerEvent: {}
+[1.606970] (-) TimerEvent: {}
+[1.707594] (-) TimerEvent: {}
+[1.808226] (-) TimerEvent: {}
+[1.908883] (-) TimerEvent: {}
+[2.009487] (-) TimerEvent: {}
+[2.110175] (-) TimerEvent: {}
+[2.210777] (-) TimerEvent: {}
+[2.291045] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.310997] (-) TimerEvent: {}
+[2.411665] (-) TimerEvent: {}
+[2.442772] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.460307] (my_detection_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/teamojasdv/ros2_ws/build/my_detection_package/build', '--no-deps', 'symlink_data'], 'cwd': '/home/teamojasdv/ros2_ws/build/my_detection_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'teamojasdv', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:', 'HOME': '/home/teamojasdv', 'OLDPWD': '/home/teamojasdv', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.3.0', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Developer Kit', 'SYSTEMD_EXEC_PID': '2329', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/teamojasdv/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'teamojasdv', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (Developer kit)', 'JETSON_SERIAL_NUMBER': '1421124268647', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'teamojasdv', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/teamojasdv/ros2_ws/build/my_detection_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/teamojasdv/ros2_ws/build/my_detection_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '6.0', 'CMAKE_PREFIX_PATH': '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs', 'JETSON_P_NUMBER': 'p3767-0005'}, 'shell': False}
+[2.502421] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.508264] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.511731] (-) TimerEvent: {}
+[2.519569] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.592734] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.611898] (-) TimerEvent: {}
+[2.649357] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[2.672420] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.694786] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.712011] (-) TimerEvent: {}
+[2.812582] (-) TimerEvent: {}
+[2.913185] (-) TimerEvent: {}
+[3.013780] (-) TimerEvent: {}
+[3.114378] (-) TimerEvent: {}
+[3.214941] (-) TimerEvent: {}
+[3.315574] (-) TimerEvent: {}
+[3.389076] (my_detection_package) StdoutLine: {'line': b'running develop\n'}
+[3.396149] (my_detection_package) StderrLine: {'line': b'/usr/local/lib/python3.10/dist-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.396398] (my_detection_package) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.415708] (-) TimerEvent: {}
+[3.516283] (-) TimerEvent: {}
+[3.543910] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[3.549484] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[3.555048] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[3.561251] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.616430] (-) TimerEvent: {}
+[3.717163] (-) TimerEvent: {}
+[3.818095] (-) TimerEvent: {}
+[3.918716] (-) TimerEvent: {}
+[3.979913] (my_detection_package) StdoutLine: {'line': b'running egg_info\n'}
+[3.980353] (my_detection_package) StdoutLine: {'line': b'creating my_detection_package.egg-info\n'}
+[4.018870] (-) TimerEvent: {}
+[4.020908] (my_detection_package) StdoutLine: {'line': b'writing my_detection_package.egg-info/PKG-INFO\n'}
+[4.021493] (my_detection_package) StdoutLine: {'line': b'writing dependency_links to my_detection_package.egg-info/dependency_links.txt\n'}
+[4.021917] (my_detection_package) StdoutLine: {'line': b'writing entry points to my_detection_package.egg-info/entry_points.txt\n'}
+[4.022165] (my_detection_package) StdoutLine: {'line': b'writing requirements to my_detection_package.egg-info/requires.txt\n'}
+[4.022346] (my_detection_package) StdoutLine: {'line': b'writing top-level names to my_detection_package.egg-info/top_level.txt\n'}
+[4.022569] (my_detection_package) StdoutLine: {'line': b"writing manifest file 'my_detection_package.egg-info/SOURCES.txt'\n"}
+[4.101972] (my_detection_package) StdoutLine: {'line': b"reading manifest file 'my_detection_package.egg-info/SOURCES.txt'\n"}
+[4.103345] (my_detection_package) StdoutLine: {'line': b"writing manifest file 'my_detection_package.egg-info/SOURCES.txt'\n"}
+[4.119009] (-) TimerEvent: {}
+[4.219552] (-) TimerEvent: {}
+[4.235926] (my_detection_package) StdoutLine: {'line': b'running build_ext\n'}
+[4.236397] (my_detection_package) StdoutLine: {'line': b'Creating /home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages/my-detection-package.egg-link (link to .)\n'}
+[4.237945] (my_detection_package) StdoutLine: {'line': b'Installing camera_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package\n'}
+[4.238347] (my_detection_package) StdoutLine: {'line': b'Installing slam_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package\n'}
+[4.238790] (my_detection_package) StdoutLine: {'line': b'\n'}
+[4.239003] (my_detection_package) StdoutLine: {'line': b'Installed /home/teamojasdv/ros2_ws/build/my_detection_package\n'}
+[4.239150] (my_detection_package) StdoutLine: {'line': b'running symlink_data\n'}
+[4.239353] (my_detection_package) StdoutLine: {'line': b'creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index\n'}
+[4.239512] (my_detection_package) StdoutLine: {'line': b'creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index\n'}
+[4.239674] (my_detection_package) StdoutLine: {'line': b'creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index/packages\n'}
+[4.239802] (my_detection_package) StdoutLine: {'line': b'symbolically linking /home/teamojasdv/ros2_ws/build/my_detection_package/resource/my_detection_package -> /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index/packages\n'}
+[4.239958] (my_detection_package) StdoutLine: {'line': b'symbolically linking /home/teamojasdv/ros2_ws/build/my_detection_package/package.xml -> /home/teamojasdv/ros2_ws/install/my_detection_package/share/my_detection_package\n'}
+[4.260632] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.319750] (-) TimerEvent: {}
+[4.403219] (my_detection_package) CommandEnded: {'returncode': 0}
+[4.419933] (-) TimerEvent: {}
+[4.440403] (my_detection_package) JobEnded: {'identifier': 'my_detection_package', 'rc': 0}
+[4.520241] (-) TimerEvent: {}
+[4.621201] (-) TimerEvent: {}
+[4.722189] (-) TimerEvent: {}
+[4.822999] (-) TimerEvent: {}
+[4.923894] (-) TimerEvent: {}
+[5.024533] (-) TimerEvent: {}
+[5.125172] (-) TimerEvent: {}
+[5.187486] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.225323] (-) TimerEvent: {}
+[5.256874] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.260843] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.325521] (-) TimerEvent: {}
+[5.332461] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.333019] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.333188] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.333330] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[5.392330] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.425744] (-) TimerEvent: {}
+[5.526668] (-) TimerEvent: {}
+[5.627293] (-) TimerEvent: {}
+[5.728053] (-) TimerEvent: {}
+[5.791163] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using numpy include directory: /home/teamojasdv/.local/lib/python3.10/site-packages/numpy/core/include\n'}
+[5.828212] (-) TimerEvent: {}
+[5.830102] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[5.834357] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[5.861896] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.928396] (-) TimerEvent: {}
+[5.953222] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[5.958705] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/teamojasdv/ros2_ws/build/realsense2_camera_msgs\n'}
+[5.987573] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[5.989621] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[5.992052] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs', '--', '-j6', '-l6'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[6.028554] (-) TimerEvent: {}
+[6.097678] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.127067] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.128627] (-) TimerEvent: {}
+[6.141610] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_realsense2_camera_msgs\n'}
+[6.228823] (-) TimerEvent: {}
+[6.329445] (-) TimerEvent: {}
+[6.430037] (-) TimerEvent: {}
+[6.530793] (-) TimerEvent: {}
+[6.631547] (-) TimerEvent: {}
+[6.732197] (-) TimerEvent: {}
+[6.832789] (-) TimerEvent: {}
+[6.933375] (-) TimerEvent: {}
+[6.954883] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.971595] (realsense2_camera_msgs) StdoutLine: {'line': b'creating realsense2_camera_msgs.egg-info\n'}
+[7.020604] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[7.021091] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[7.021424] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[7.021656] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[7.033481] (-) TimerEvent: {}
+[7.134150] (-) TimerEvent: {}
+[7.137676] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[7.139161] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[7.234313] (-) TimerEvent: {}
+[7.280389] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] Built target realsense2_camera_msgs__cpp\n'}
+[7.286307] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[7.308677] (realsense2_camera_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.319009] (realsense2_camera_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.334490] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.335008] (-) TimerEvent: {}
+[7.433451] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.c.o\x1b[0m\n'}
+[7.433925] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__functions.c.o\x1b[0m\n'}
+[7.435132] (-) TimerEvent: {}
+[7.437624] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/metadata__functions.c.o\x1b[0m\n'}
+[7.535336] (-) TimerEvent: {}
+[7.539138] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rgbd__functions.c.o\x1b[0m\n'}
+[7.559720] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__functions.c.o\x1b[0m\n'}
+[7.635497] (-) TimerEvent: {}
+[7.696539] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.735705] (-) TimerEvent: {}
+[7.773177] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 17%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[7.796746] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.797382] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.799194] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.835857] (-) TimerEvent: {}
+[7.936476] (-) TimerEvent: {}
+[8.037084] (-) TimerEvent: {}
+[8.137722] (-) TimerEvent: {}
+[8.174591] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[8.237925] (-) TimerEvent: {}
+[8.338580] (-) TimerEvent: {}
+[8.439208] (-) TimerEvent: {}
+[8.476534] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp.o\x1b[0m\n'}
+[8.480350] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o\x1b[0m\n'}
+[8.539366] (-) TimerEvent: {}
+[8.640297] (-) TimerEvent: {}
+[8.741237] (-) TimerEvent: {}
+[8.842278] (-) TimerEvent: {}
+[8.943317] (-) TimerEvent: {}
+[8.996877] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[9.043515] (-) TimerEvent: {}
+[9.056794] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[9.125468] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[9.143713] (-) TimerEvent: {}
+[9.190851] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[9.243048] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/imu_info__type_support.c.o\x1b[0m\n'}
+[9.243786] (-) TimerEvent: {}
+[9.285484] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o\x1b[0m\n'}
+[9.310317] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o\x1b[0m\n'}
+[9.343855] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c.o\x1b[0m\n'}
+[9.344384] (-) TimerEvent: {}
+[9.393053] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[9.429881] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/metadata__type_support.c.o\x1b[0m\n'}
+[9.444635] (-) TimerEvent: {}
+[9.479498] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.544848] (-) TimerEvent: {}
+[9.557067] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/rgbd__type_support.c.o\x1b[0m\n'}
+[9.569741] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[9.585120] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[9.589719] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[9.595707] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[9.644442] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/device_info__type_support.c.o\x1b[0m\n'}
+[9.644931] (-) TimerEvent: {}
+[9.720457] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[9.745183] (-) TimerEvent: {}
+[9.746571] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.822697] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 55%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[9.842111] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o\x1b[0m\n'}
+[9.845370] (-) TimerEvent: {}
+[9.946382] (-) TimerEvent: {}
+[10.047503] (-) TimerEvent: {}
+[10.148512] (-) TimerEvent: {}
+[10.159225] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o\x1b[0m\n'}
+[10.199101] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[10.248705] (-) TimerEvent: {}
+[10.349723] (-) TimerEvent: {}
+[10.450783] (-) TimerEvent: {}
+[10.476040] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[10.526780] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp.o\x1b[0m\n'}
+[10.551046] (-) TimerEvent: {}
+[10.652023] (-) TimerEvent: {}
+[10.659524] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o\x1b[0m\n'}
+[10.675582] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp.o\x1b[0m\n'}
+[10.752208] (-) TimerEvent: {}
+[10.853167] (-) TimerEvent: {}
+[10.954168] (-) TimerEvent: {}
+[11.055232] (-) TimerEvent: {}
+[11.058426] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/rgbd__type_support_c.cpp.o\x1b[0m\n'}
+[11.148018] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/device_info__type_support_c.cpp.o\x1b[0m\n'}
+[11.155416] (-) TimerEvent: {}
+[11.177473] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.255605] (-) TimerEvent: {}
+[11.288654] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 71%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[11.312250] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o\x1b[0m\n'}
+[11.355801] (-) TimerEvent: {}
+[11.456538] (-) TimerEvent: {}
+[11.549425] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/device_info__type_support.cpp.o\x1b[0m\n'}
+[11.556748] (-) TimerEvent: {}
+[11.590153] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.656963] (-) TimerEvent: {}
+[11.757681] (-) TimerEvent: {}
+[11.810014] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 76%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[11.857908] (-) TimerEvent: {}
+[11.958867] (-) TimerEvent: {}
+[12.059565] (-) TimerEvent: {}
+[12.084446] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.159754] (-) TimerEvent: {}
+[12.242061] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 77%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.259926] (-) TimerEvent: {}
+[12.360647] (-) TimerEvent: {}
+[12.501435] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.502161] (-) TimerEvent: {}
+[12.602751] (-) TimerEvent: {}
+[12.661125] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.703104] (-) TimerEvent: {}
+[12.713874] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs\n'}
+[12.770945] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.803279] (-) TimerEvent: {}
+[12.904059] (-) TimerEvent: {}
+[13.004651] (-) TimerEvent: {}
+[13.105258] (-) TimerEvent: {}
+[13.205859] (-) TimerEvent: {}
+[13.306506] (-) TimerEvent: {}
+[13.407120] (-) TimerEvent: {}
+[13.507793] (-) TimerEvent: {}
+[13.608527] (-) TimerEvent: {}
+[13.709230] (-) TimerEvent: {}
+[13.809829] (-) TimerEvent: {}
+[13.910435] (-) TimerEvent: {}
+[14.011088] (-) TimerEvent: {}
+[14.111847] (-) TimerEvent: {}
+[14.212578] (-) TimerEvent: {}
+[14.313327] (-) TimerEvent: {}
+[14.414227] (-) TimerEvent: {}
+[14.460877] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[14.512124] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[14.512849] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o\x1b[0m\n'}
+[14.513055] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o\x1b[0m\n'}
+[14.513422] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_rgbd_s.c.o\x1b[0m\n'}
+[14.514266] (-) TimerEvent: {}
+[14.524836] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o\x1b[0m\n'}
+[14.614504] (-) TimerEvent: {}
+[14.715239] (-) TimerEvent: {}
+[14.764400] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[14.815436] (-) TimerEvent: {}
+[14.869005] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[14.915674] (-) TimerEvent: {}
+[14.916318] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.916744] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.917506] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.015834] (-) TimerEvent: {}
+[15.116522] (-) TimerEvent: {}
+[15.155770] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[15.156352] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[15.156734] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[15.216704] (-) TimerEvent: {}
+[15.251818] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[15.252635] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.272752] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[15.307140] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[15.316858] (-) TimerEvent: {}
+[15.417606] (-) TimerEvent: {}
+[15.518736] (-) TimerEvent: {}
+[15.583673] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[15.608073] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[15.618846] (-) TimerEvent: {}
+[15.632607] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.633707] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.634475] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[15.657079] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[15.679767] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[15.701736] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[15.719120] (-) TimerEvent: {}
+[15.723524] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[15.745705] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[15.772440] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[15.796825] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[15.819374] (-) TimerEvent: {}
+[15.820787] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[15.842736] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[15.866327] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.h\n'}
+[15.889600] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.h\n'}
+[15.911874] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.h\n'}
+[15.919554] (-) TimerEvent: {}
+[15.935226] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[15.959230] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h\n'}
+[15.984567] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h\n'}
+[16.006045] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.h\n'}
+[16.019691] (-) TimerEvent: {}
+[16.028102] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.052988] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[16.077552] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[16.119921] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[16.120442] (-) TimerEvent: {}
+[16.142595] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h\n'}
+[16.169467] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[16.192168] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[16.213846] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[16.220690] (-) TimerEvent: {}
+[16.240242] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[16.265336] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[16.287905] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h\n'}
+[16.310005] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.320752] (-) TimerEvent: {}
+[16.331886] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[16.359355] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[16.381387] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[16.407554] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[16.420883] (-) TimerEvent: {}
+[16.431413] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h\n'}
+[16.459232] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.480987] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[16.506597] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[16.521010] (-) TimerEvent: {}
+[16.530168] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[16.554991] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[16.578340] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[16.600918] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[16.621147] (-) TimerEvent: {}
+[16.622646] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[16.644247] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[16.670819] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[16.692484] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[16.713698] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__builder.hpp\n'}
+[16.721331] (-) TimerEvent: {}
+[16.738916] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.hpp\n'}
+[16.761778] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__traits.hpp\n'}
+[16.783297] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[16.804978] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[16.821565] (-) TimerEvent: {}
+[16.830431] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[16.853486] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.hpp\n'}
+[16.875880] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[16.897311] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[16.919964] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[16.921645] (-) TimerEvent: {}
+[16.941611] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[16.966893] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.989352] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.012687] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.021877] (-) TimerEvent: {}
+[17.034102] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.063250] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.085934] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.108618] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.122108] (-) TimerEvent: {}
+[17.129803] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.152124] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.174161] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.197612] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.222341] (-) TimerEvent: {}
+[17.222898] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[17.243536] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[17.267322] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/PKG-INFO\n'}
+[17.289145] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/SOURCES.txt\n'}
+[17.315936] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/dependency_links.txt\n'}
+[17.322462] (-) TimerEvent: {}
+[17.337367] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/top_level.txt\n'}
+[17.362109] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py\n'}
+[17.384526] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[17.405797] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.422705] (-) TimerEvent: {}
+[17.426979] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.447868] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[17.471886] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[17.495449] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[17.518075] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c\n'}
+[17.522781] (-) TimerEvent: {}
+[17.539947] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[17.562465] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c\n'}
+[17.585962] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[17.606769] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c\n'}
+[17.622951] (-) TimerEvent: {}
+[17.629358] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py\n'}
+[17.650743] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd_s.c\n'}
+[17.673719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.700481] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.722723] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.723239] (-) TimerEvent: {}
+[17.744981] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[17.767229] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[17.788824] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c\n'}
+[17.811738] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.812459] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.813390] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[17.814183] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[17.823371] (-) TimerEvent: {}
+[17.836609] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[17.858007] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[17.880022] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.idl\n'}
+[17.901888] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[17.923554] (-) TimerEvent: {}
+[17.924070] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[17.945369] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[17.967165] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[17.989189] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.msg\n'}
+[18.010487] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[18.023750] (-) TimerEvent: {}
+[18.031278] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[18.057544] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[18.080255] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[18.106154] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[18.123944] (-) TimerEvent: {}
+[18.130034] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[18.152608] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[18.176097] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[18.200093] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[18.224097] (-) TimerEvent: {}
+[18.224627] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[18.245926] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[18.272374] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[18.296222] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[18.318819] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[18.324222] (-) TimerEvent: {}
+[18.341426] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[18.363633] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[18.386805] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.410765] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.424392] (-) TimerEvent: {}
+[18.433268] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.455473] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.479236] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[18.505281] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[18.524541] (-) TimerEvent: {}
+[18.526908] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[18.553493] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[18.574752] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[18.596566] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[18.597262] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so" to ""\n'}
+[18.597522] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[18.598304] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[18.598674] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[18.599527] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[18.599821] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[18.600554] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so" to ""\n'}
+[18.600751] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[18.601398] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[18.601568] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[18.602268] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[18.602427] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[18.602937] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[18.624665] (-) TimerEvent: {}
+[18.702359] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...\n"}
+[18.702850] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py'...\n"}
+[18.703058] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...\n"}
+[18.703208] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py'...\n"}
+[18.703344] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py'...\n"}
+[18.703471] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py'...\n"}
+[18.703596] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py'...\n"}
+[18.703717] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py'...\n"}
+[18.703836] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...\n"}
+[18.703953] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py'...\n"}
+[18.704069] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py'...\n"}
+[18.716245] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[18.717109] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so" to ""\n'}
+[18.717427] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[18.717686] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[18.718031] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[18.718376] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[18.718719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[18.719134] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[18.719509] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[18.719850] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[18.720191] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[18.720527] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[18.720857] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[18.721209] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[18.721540] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[18.721885] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[18.722262] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[18.722580] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[18.722947] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[18.724751] (-) TimerEvent: {}
+[18.731351] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[18.824923] (-) TimerEvent: {}
+[18.925790] (-) TimerEvent: {}
+[19.026565] (-) TimerEvent: {}
+[19.044614] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[19.048318] (realsense2_camera) JobStarted: {'identifier': 'realsense2_camera'}
+[19.055665] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[19.068279] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'cmake'}
+[19.068996] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '/home/teamojasdv/ros2_ws/src/realsense-ros/realsense2_camera', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/teamojasdv/ros2_ws/install/realsense2_camera'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[19.075666] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'cmake'}
+[19.076160] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '/home/teamojasdv/ros2_ws/src/realsense-ros/realsense2_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/teamojasdv/ros2_ws/install/realsense2_description'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[19.126871] (-) TimerEvent: {}
+[19.193841] (realsense2_camera) StdoutLine: {'line': b'-- The C compiler identification is GNU 10.5.0\n'}
+[19.204249] (realsense2_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 10.5.0\n'}
+[19.227050] (-) TimerEvent: {}
+[19.311756] (realsense2_camera) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 10.5.0\n'}
+[19.327241] (-) TimerEvent: {}
+[19.328102] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[19.332314] (realsense2_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 10.5.0\n'}
+[19.355752] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[19.427556] (-) TimerEvent: {}
+[19.479186] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[19.493205] (realsense2_camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[19.493730] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[19.494667] (realsense2_camera) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[19.502041] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[19.514500] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[19.527668] (-) TimerEvent: {}
+[19.528741] (realsense2_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[19.529210] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[19.529937] (realsense2_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[19.536429] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[19.627849] (-) TimerEvent: {}
+[19.663085] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[19.675058] (realsense2_camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[19.675562] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[19.676364] (realsense2_camera) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[19.677811] (realsense2_camera) StdoutLine: {'line': b'-- Create Release Build.\n'}
+[19.680383] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[19.705519] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[19.720730] (realsense2_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[19.721271] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[19.722158] (realsense2_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[19.726488] (realsense2_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[19.727910] (-) TimerEvent: {}
+[19.828541] (-) TimerEvent: {}
+[19.929634] (-) TimerEvent: {}
+[20.030316] (-) TimerEvent: {}
+[20.130931] (-) TimerEvent: {}
+[20.231827] (-) TimerEvent: {}
+[20.332541] (-) TimerEvent: {}
+[20.433158] (-) TimerEvent: {}
+[20.533771] (-) TimerEvent: {}
+[20.634417] (-) TimerEvent: {}
+[20.735090] (-) TimerEvent: {}
+[20.835690] (-) TimerEvent: {}
+[20.936291] (-) TimerEvent: {}
+[21.036891] (-) TimerEvent: {}
+[21.137537] (-) TimerEvent: {}
+[21.238157] (-) TimerEvent: {}
+[21.307754] (realsense2_camera) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[21.348932] (-) TimerEvent: {}
+[21.349871] (realsense2_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[21.449110] (-) TimerEvent: {}
+[21.501963] (realsense2_camera) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[21.502693] (realsense2_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[21.549581] (-) TimerEvent: {}
+[21.562495] (realsense2_camera) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[21.631558] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[21.640036] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[21.649621] (-) TimerEvent: {}
+[21.655121] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[21.677413] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.707649] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[21.730117] (realsense2_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[21.735721] (realsense2_description) StdoutLine: {'line': b'-- Generating done\n'}
+[21.736059] (realsense2_camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[21.737461] (realsense2_description) StdoutLine: {'line': b'-- Build files have been written to: /home/teamojasdv/ros2_ws/build/realsense2_description\n'}
+[21.747695] (realsense2_description) CommandEnded: {'returncode': 0}
+[21.750811] (-) TimerEvent: {}
+[21.752271] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'build'}
+[21.752701] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/teamojasdv/ros2_ws/build/realsense2_description', '--', '-j6', '-l6'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[21.754593] (realsense2_camera) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindCUDA.cmake:723 (option):\n'}
+[21.755057] (realsense2_camera) StderrLine: {'line': b'  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake\n'}
+[21.755321] (realsense2_camera) StderrLine: {'line': b'  --help-policy CMP0077" for policy details.  Use the cmake_policy command to\n'}
+[21.755461] (realsense2_camera) StderrLine: {'line': b'  set the policy and suppress this warning.\n'}
+[21.755587] (realsense2_camera) StderrLine: {'line': b'\n'}
+[21.755707] (realsense2_camera) StderrLine: {'line': b'  For compatibility with older versions of CMake, option is clearing the\n'}
+[21.755828] (realsense2_camera) StderrLine: {'line': b"  normal variable 'CUDA_PROPAGATE_HOST_FLAGS'.\n"}
+[21.755946] (realsense2_camera) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[21.756061] (realsense2_camera) StderrLine: {'line': b'  /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:86 (find_package)\n'}
+[21.756177] (realsense2_camera) StderrLine: {'line': b'  /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:108 (find_host_package)\n'}
+[21.756323] (realsense2_camera) StderrLine: {'line': b'  /opt/ros/humble/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[21.756441] (realsense2_camera) StderrLine: {'line': b'  /opt/ros/humble/share/cv_bridge/cmake/cv_bridgeConfig.cmake:41 (include)\n'}
+[21.756553] (realsense2_camera) StderrLine: {'line': b'  CMakeLists.txt:107 (find_package)\n'}
+[21.756665] (realsense2_camera) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[21.756802] (realsense2_camera) StderrLine: {'line': b'\x1b[0m\n'}
+[21.840141] (realsense2_description) CommandEnded: {'returncode': 0}
+[21.850967] (-) TimerEvent: {}
+[21.892117] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'install'}
+[21.892989] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/teamojasdv/ros2_ws/build/realsense2_description'], 'cwd': '/home/teamojasdv/ros2_ws/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'teamojasdv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/lib:/usr/local/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64:/home/teamojasdv/ros2_ws/install/realsense2_camera/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.2/lib64'), ('HOME', '/home/teamojasdv'), ('OLDPWD', '/home/teamojasdv'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.3.0'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('SYSTEMD_EXEC_PID', '2329'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'teamojasdv'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421124268647'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teamojasdv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/teamojasdv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2305,unix/ubuntu:/tmp/.ICE-unix/2305'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e653a960_dad2_47fc_8cd5_ee04b06a9470'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/teamojasdv/ros2_ws/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/usr/local/lib/python3.8/site-packages/:/usr/local/lib/python3.8/site-packages/:/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.8/site-packages/::/usr/local/lib:/usr/local/OFF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.0'), ('CMAKE_PREFIX_PATH', '/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs:/home/teamojasdv/ros2_ws/install/realsense2_description:/home/teamojasdv/ros2_ws/install/realsense2_camera:/home/teamojasdv/ros2_ws/install/my_detection_package:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[21.916610] (realsense2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.917341] (realsense2_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.951051] (-) TimerEvent: {}
+[21.999312] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py\n'}
+[22.025299] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py\n'}
+[22.046226] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d405.stl\n'}
+[22.051173] (-) TimerEvent: {}
+[22.067602] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d415.stl\n'}
+[22.089828] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d435.dae\n'}
+[22.111654] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d455.stl\n'}
+[22.131865] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/l515.dae\n'}
+[22.151356] (-) TimerEvent: {}
+[22.153748] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug.stl\n'}
+[22.175794] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl\n'}
+[22.197149] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz\n'}
+[22.218867] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d405.urdf.xacro\n'}
+[22.243448] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro\n'}
+[22.251443] (-) TimerEvent: {}
+[22.265629] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro\n'}
+[22.286829] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro\n'}
+[22.308447] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro\n'}
+[22.330147] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro\n'}
+[22.351705] (-) TimerEvent: {}
+[22.352516] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro\n'}
+[22.372678] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro\n'}
+[22.392960] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro\n'}
+[22.416893] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro\n'}
+[22.438124] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d405_camera.urdf.xacro\n'}
+[22.451860] (-) TimerEvent: {}
+[22.460350] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro\n'}
+[22.482483] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro\n'}
+[22.505757] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro\n'}
+[22.528755] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro\n'}
+[22.551497] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro\n'}
+[22.552064] (-) TimerEvent: {}
+[22.573615] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro\n'}
+[22.594594] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro\n'}
+[22.618012] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description\n'}
+[22.642840] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description\n'}
+[22.652238] (-) TimerEvent: {}
+[22.665698] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh\n'}
+[22.690076] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv\n'}
+[22.714269] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.sh\n'}
+[22.737516] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.dsv\n'}
+[22.752484] (-) TimerEvent: {}
+[22.759977] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.bash\n'}
+[22.781067] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.sh\n'}
+[22.806140] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.zsh\n'}
+[22.827506] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.dsv\n'}
+[22.850556] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv\n'}
+[22.852568] (-) TimerEvent: {}
+[22.874917] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description\n'}
+[22.896071] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake\n'}
+[22.920165] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake\n'}
+[22.942146] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/teamojasdv/ros2_ws/install/realsense2_description/share/realsense2_description/package.xml\n'}
+[22.952770] (-) TimerEvent: {}
+[22.968424] (realsense2_description) CommandEnded: {'returncode': 0}
+[23.052925] (-) TimerEvent: {}
+[23.058896] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 0}
+[23.153177] (-) TimerEvent: {}
+[23.254117] (-) TimerEvent: {}
+[23.354952] (-) TimerEvent: {}
+[23.426079] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[23.455221] (-) TimerEvent: {}
+[23.556256] (-) TimerEvent: {}
+[23.616275] (realsense2_camera) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[23.618227] (realsense2_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[23.656503] (-) TimerEvent: {}
+[23.757423] (-) TimerEvent: {}
+[23.797330] (realsense2_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[23.800545] (realsense2_camera) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[23.838942] (realsense2_camera) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda-12.2 (found suitable exact version "12.2") \n'}
+[23.857673] (-) TimerEvent: {}
+[23.958579] (-) TimerEvent: {}
+[23.971801] (realsense2_camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[24.058845] (-) TimerEvent: {}
+[24.152288] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[24.158906] (-) TimerEvent: {}
+[24.162838] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[24.259169] (-) TimerEvent: {}
+[24.359902] (-) TimerEvent: {}
+[24.418405] (realsense2_camera) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[24.460009] (-) TimerEvent: {}
+[24.486104] (realsense2_camera) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[24.560192] (-) TimerEvent: {}
+[24.640352] (realsense2_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[24.660281] (-) TimerEvent: {}
+[24.760677] (-) TimerEvent: {}
+[24.861071] (-) TimerEvent: {}
+[24.930422] (realsense2_camera) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[24.961172] (-) TimerEvent: {}
+[24.992088] (realsense2_camera) StdoutLine: {'line': b'-- Found realsense2_camera_msgs: 4.55.1 (/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)\n'}
+[25.032450] (realsense2_camera) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[25.061274] (-) TimerEvent: {}
+[25.086522] (realsense2_camera) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[25.161389] (-) TimerEvent: {}
+[25.261900] (-) TimerEvent: {}
+[25.324340] (realsense2_camera) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.0 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[25.362012] (-) TimerEvent: {}
+[25.395479] (realsense2_camera) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "4.9.0") found components: core \n'}
+[25.419372] (realsense2_camera) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:120 (find_package):\n'}
+[25.419773] (realsense2_camera) StderrLine: {'line': b'  Could not find a configuration file for package "realsense2" that is\n'}
+[25.420196] (realsense2_camera) StderrLine: {'line': b'  compatible with requested version "2.55.1".\n'}
+[25.420456] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.420698] (realsense2_camera) StderrLine: {'line': b'  The following configuration files were considered but not accepted:\n'}
+[25.420931] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.421154] (realsense2_camera) StderrLine: {'line': b'    /usr/local/lib/cmake/realsense2/realsense2Config.cmake, version: 2.54.2\n'}
+[25.421376] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.421593] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.421805] (realsense2_camera) StderrLine: {'line': b'\x1b[0m\n'}
+[25.422017] (realsense2_camera) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:125 (message):\n'}
+[25.422234] (realsense2_camera) StderrLine: {'line': b'  \n'}
+[25.422448] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.422660] (realsense2_camera) StderrLine: {'line': b'  \n'}
+[25.422868] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.423127] (realsense2_camera) StderrLine: {'line': b'   Intel RealSense SDK 2.0 is missing, please install it from https://github.com/IntelRealSense/librealsense/releases\n'}
+[25.423353] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.423564] (realsense2_camera) StderrLine: {'line': b'  \n'}
+[25.423774] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.423985] (realsense2_camera) StderrLine: {'line': b'\n'}
+[25.424192] (realsense2_camera) StderrLine: {'line': b'\x1b[0m\n'}
+[25.424399] (realsense2_camera) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[25.424632] (realsense2_camera) StdoutLine: {'line': b'See also "/home/teamojasdv/ros2_ws/build/realsense2_camera/CMakeFiles/CMakeOutput.log".\n'}
+[25.453312] (realsense2_camera) CommandEnded: {'returncode': 1}
+[25.462123] (-) TimerEvent: {}
+[25.500019] (realsense2_camera) JobEnded: {'identifier': 'realsense2_camera', 'rc': 1}
+[25.512112] (-) EventReactorShutdown: {}

@@ -1,0 +1,36 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindCUDA.cmake:723 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'CUDA_PROPAGATE_HOST_FLAGS'.
+Call Stack (most recent call first):
+  /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:86 (find_package)
+  /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake:108 (find_host_package)
+  /opt/ros/humble/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/cv_bridge/cmake/cv_bridgeConfig.cmake:41 (include)
+  CMakeLists.txt:107 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning at CMakeLists.txt:120 (find_package):
+  Could not find a configuration file for package "realsense2" that is
+  compatible with requested version "2.55.1".
+
+  The following configuration files were considered but not accepted:
+
+    /usr/local/lib/cmake/realsense2/realsense2Config.cmake, version: 2.54.2
+
+
+[0m
+[31mCMake Error at CMakeLists.txt:125 (message):
+  
+
+  
+
+   Intel RealSense SDK 2.0 is missing, please install it from https://github.com/IntelRealSense/librealsense/releases
+
+  
+
+
+[0m
