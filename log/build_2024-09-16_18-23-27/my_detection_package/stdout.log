@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating my_detection_package.egg-info
+writing my_detection_package.egg-info/PKG-INFO
+writing dependency_links to my_detection_package.egg-info/dependency_links.txt
+writing entry points to my_detection_package.egg-info/entry_points.txt
+writing requirements to my_detection_package.egg-info/requires.txt
+writing top-level names to my_detection_package.egg-info/top_level.txt
+writing manifest file 'my_detection_package.egg-info/SOURCES.txt'
+reading manifest file 'my_detection_package.egg-info/SOURCES.txt'
+writing manifest file 'my_detection_package.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages/my-detection-package.egg-link (link to .)
+Installing camera_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+Installing cone_detection_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+Installing display_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+Installing yolo_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+
+Installed /home/teamojasdv/ros2_ws/build/my_detection_package
+running symlink_data
+creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index
+creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index
+creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index/packages
+symbolically linking /home/teamojasdv/ros2_ws/build/my_detection_package/resource/my_detection_package -> /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index/packages
+symbolically linking /home/teamojasdv/ros2_ws/build/my_detection_package/package.xml -> /home/teamojasdv/ros2_ws/install/my_detection_package/share/my_detection_package

@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_custom_msgs/msg/ConeArray.msg
+// generated code does not contain a copyright notice
+
+#include "my_custom_msgs/msg/Cone.idl"
+#include "my_custom_msgs/msg/Header.idl"
+
+module my_custom_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "ConeArray.msg")
+    struct ConeArray {
+      my_custom_msgs::msg::Header header;
+
+      sequence<my_custom_msgs::msg::Cone> cones;
+
+      @verbatim (language="comment", text=
+        "Define the Cone message type" "\n"
+        "For example, you might need to define Cone.msg in a similar manner:" "\n"
+        "Cone.msg")
+      float x;
+
+      float y;
+
+      float z;
+
+      float radius;
+    };
+  };
+};

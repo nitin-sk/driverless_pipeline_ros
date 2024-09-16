@@ -1,0 +1,42 @@
+[0.035s] Invoking command in '/home/teamojasdv/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/teamojasdv/ros2_ws/src/realsense-ros/realsense2_camera_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/teamojasdv/ros2_ws/install/realsense2_camera_msgs
+[0.139s] -- The C compiler identification is GNU 10.5.0
+[0.247s] -- The CXX compiler identification is GNU 10.5.0
+[0.268s] -- Detecting C compiler ABI info
+[0.433s] -- Detecting C compiler ABI info - done
+[0.451s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.452s] -- Detecting C compile features
+[0.454s] -- Detecting C compile features - done
+[0.464s] -- Detecting CXX compiler ABI info
+[0.618s] -- Detecting CXX compiler ABI info - done
+[0.643s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.643s] -- Detecting CXX compile features
+[0.645s] -- Detecting CXX compile features - done
+[0.651s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.357s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.516s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.558s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.562s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.571s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.639s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.696s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[2.718s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[2.741s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.495s] -- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[3.500s] -- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[3.505s] -- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[3.511s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.211s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.145s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.208s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.212s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.290s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.291s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.291s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.291s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.354s] -- Found PythonExtra: .so  
+[5.759s] -- Using numpy include directory: /home/teamojasdv/.local/lib/python3.10/site-packages/numpy/core/include
+[5.800s] -- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[5.806s] -- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[5.838s] -- Configuring done
+[5.933s] -- Generating done
+[5.939s] -- Build files have been written to: /home/teamojasdv/ros2_ws/build/realsense2_camera_msgs

@@ -19,11 +19,13 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            'camera_node = my_detection_package.camera_node:main',
-            'yolo_node = my_detection_package.yolo_node:main',
-            'display_node = my_detection_package.display_node:main',
-        ],
+    	'console_scripts': [
+        	'camera_node = my_detection_package.camera_node:main',
+        	'yolo_node = my_detection_package.yolo_node:main',
+        	'display_node = my_detection_package.display_node:main',
+        	'cone_detection_node = my_detection_package.cone_detection_node:main',
+    	],
     },
+
 )
 

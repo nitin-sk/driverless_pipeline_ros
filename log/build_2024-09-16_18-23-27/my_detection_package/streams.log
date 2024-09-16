@@ -1,0 +1,28 @@
+[2.503s] Invoking command in '/home/teamojasdv/ros2_ws/build/my_detection_package': PYTHONPATH=/home/teamojasdv/ros2_ws/build/my_detection_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/teamojasdv/ros2_ws/build/my_detection_package/build --no-deps symlink_data
+[3.422s] running develop
+[3.423s] /usr/local/lib/python3.10/dist-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.423s]   warnings.warn(
+[3.998s] running egg_info
+[3.999s] creating my_detection_package.egg-info
+[4.038s] writing my_detection_package.egg-info/PKG-INFO
+[4.039s] writing dependency_links to my_detection_package.egg-info/dependency_links.txt
+[4.039s] writing entry points to my_detection_package.egg-info/entry_points.txt
+[4.039s] writing requirements to my_detection_package.egg-info/requires.txt
+[4.039s] writing top-level names to my_detection_package.egg-info/top_level.txt
+[4.040s] writing manifest file 'my_detection_package.egg-info/SOURCES.txt'
+[4.118s] reading manifest file 'my_detection_package.egg-info/SOURCES.txt'
+[4.119s] writing manifest file 'my_detection_package.egg-info/SOURCES.txt'
+[4.247s] running build_ext
+[4.247s] Creating /home/teamojasdv/ros2_ws/install/my_detection_package/lib/python3.10/site-packages/my-detection-package.egg-link (link to .)
+[4.249s] Installing camera_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.249s] Installing cone_detection_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.249s] Installing display_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.249s] Installing yolo_node script to /home/teamojasdv/ros2_ws/install/my_detection_package/lib/my_detection_package
+[4.250s] 
+[4.250s] Installed /home/teamojasdv/ros2_ws/build/my_detection_package
+[4.250s] running symlink_data
+[4.251s] creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index
+[4.251s] creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index
+[4.251s] creating /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index/packages
+[4.251s] symbolically linking /home/teamojasdv/ros2_ws/build/my_detection_package/resource/my_detection_package -> /home/teamojasdv/ros2_ws/install/my_detection_package/share/ament_index/resource_index/packages
+[4.251s] symbolically linking /home/teamojasdv/ros2_ws/build/my_detection_package/package.xml -> /home/teamojasdv/ros2_ws/install/my_detection_package/share/my_detection_package

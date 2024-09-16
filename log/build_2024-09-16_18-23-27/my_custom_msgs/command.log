@@ -1,0 +1,2 @@
+Invoking command in '/home/teamojasdv/ros2_ws/build/my_custom_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/teamojasdv/ros2_ws/src/my_custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/teamojasdv/ros2_ws/install/my_custom_msgs
+Invoked command in '/home/teamojasdv/ros2_ws/build/my_custom_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/teamojasdv/ros2_ws/src/my_custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/teamojasdv/ros2_ws/install/my_custom_msgs

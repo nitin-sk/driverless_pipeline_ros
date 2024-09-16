@@ -1,4 +1,5 @@
 [console_scripts]
 camera_node = my_detection_package.camera_node:main
+cone_detection_node = my_detection_package.cone_detection_node:main
 display_node = my_detection_package.display_node:main
 yolo_node = my_detection_package.yolo_node:main
